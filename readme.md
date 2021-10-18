@@ -11,3 +11,5 @@
 3. Abrir el documento html con live server.
 
 4. Seguir flujo del programa.
+
+- Aún está pendiente por terminar.
