@@ -1,8 +1,6 @@
 // Data user
 const name_user = prompt("What's your name?");
 const last_name_user = prompt("What's your last name?");
-// const name_user = "john";
-// const last_name_user = "freddy";
 
 // Method
 const handlerAvatar = (name, last_name) => {
