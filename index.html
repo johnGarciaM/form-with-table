@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./src/assets/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./src/assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./src/css/index.css">
+  <title>Sistema</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Hardware technology Inc</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </nav>
+      <div class="avatar">
+        <span class="avatar-text"></span>
+      </div>
+    </header>
+    <main>
+      <section>
+        <article>
+          <form name="myform" action="" method="post" onsubmit="handlerSubmit(event)">
+            <label for="prod">Choose to product:</label>
+            <select name="prod" onchange="handlerSetPrice(event)">
+              <option value="" selected disabled hidden>Choose product</option>
+              <option value="Laptop">Laptop</option>
+              <option value="Desktop">Desktop</option>
+              <option value="Mouse">Mouse</option>
+              <option value="Speaker">Speaker</option>
+              <option value="Keyboard">Keyboard</option>
+            </select>
+            <label for="country">Choose to country:</label>
+            <select name="country">
+              <option value="" selected disabled hidden>Choose country</option>
+              <option value="United States">United States</option>
+              <option value="Canada">Canada</option>
+              <option value="Colombia">Colombia</option>
+              <option value="Londres">Londres</option>
+              <option value="China">China</option>
+            </select>
+            <label for="color">Color:</label>
+            <select name="color">
+              <option value="" selected disabled hidden>Choose color</option>
+              <option value="Green">Green</option>
+              <option value="Blue">Blue</option>
+              <option value="White">White</option>
+              <option value="Black">Black</option>
+              <option value="Red">Red</option>
+            </select>
+            <label for="price">Price:</label>
+            <input type="text" name="price" disabled>
+            <input type="submit" value="Add to cart">
+          </form>
+        </article>
+        <article>
+          <table border="1" width="100%">
+            <thead>
+              <tr>
+                <td>Product</td>
+                <td>Country</td>
+                <td>Color</td>
+                <td>Price</td>
+              </tr>
+            </thead>
+            <tbody></tbody>
+            <tfoot>
+              <tr>
+                <td colspan="3">Total</td>
+                <td colspan="2" class="total">$0.00</td>
+              </tr>
+            </tfoot>
+          </table>
+          <div class="shopping-finished">
+            <input type="button" value="Shopping finished">
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <h4>&#169 2021 Medellín Antioquia, @john garcia.</h4>
+    </footer>
+  </div>
+  <script src="./src/js/index.js"></script>
+</body>
+</html>

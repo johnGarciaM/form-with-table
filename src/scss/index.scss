@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
+@import "mixins";
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Playfair Display", serif;
+}
+
+.container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: $color-ternary;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  @include set-overflow-style;
+  header{
+    @include justify-element(space-between);
+    align-items: center;
+    height: 20vh;
+    h1{
+      @include set-color-text-shadow;
+      margin-inline-end: 1rem;
+      font-size: 2.9rem;
+      &:hover{
+        color: $color-primary;
+      }
+    }
+    nav{
+      width: 40%;
+      @include justify-element(flex-end);
+      ul{
+        list-style: none;
+        @include justify-element(flex-end);
+        li{
+          @include set-border-background-color;
+          a{
+            text-decoration: none;
+            color: $color-primary;
+            &:hover{
+              @include set-color-text-shadow;
+            }
+          }
+          &:hover{
+            border: 1px solid $color-secondary;
+          }
+          padding: 0.8rem;
+          border: 1px solid $color-secondary;
+          cursor: pointer;
+        }
+      }
+    }
+    .avatar{
+      width: 60px;
+      height: 60px;
+      @include justify-element(center);
+      align-items: center;
+      border-radius: 50%;
+      @include set-border-background-color;
+      font-size: 1.5rem;
+      &:hover{
+        border: 1px solid $color-secondary;
+        @include set-color-text-shadow;
+      }
+    }
+  }
+  main{
+    height: 71vh;
+    section{
+      @include justify-element(space-evenly);
+      article{
+        width: 45%;
+        height: 50vh;
+        box-sizing: border-box;
+        padding: 2rem;
+        border: 1px solid $color-secondary;
+        color: $color-primary;
+        border-radius: 2rem;
+        form{
+          @include justify-element(space-around);
+          flex-direction: column;
+          height: 42vh;
+          input{
+            &:read-only{
+              border-radius: 5px;
+              height: 2rem;
+              @include set-border-background-color;
+            }
+          }
+          input[type=submit]{
+            @include set-props-button;
+          }
+          select{
+            border-radius: 5px;
+            height: 2rem;
+            @include set-border-background-color;
+          }
+        }
+        table{
+          border-collapse: collapse;
+          display: inline-block;
+          height: 35.5vh;
+          @include set-overflow-style;
+          thead{
+            position: sticky;
+            top: 0;
+            tr{
+              td{
+                width: 200px;
+                @include set-props-td;
+              }
+            }
+          }
+          tbody{
+            tr{
+              td{
+                text-align: center;
+                color: $color-primary;
+              }
+            }
+          }
+          tfoot{
+            position: fixed;
+            top: 59%;
+            tr{
+              td{
+                min-width: 275px;
+                @include set-props-td;
+              }
+            }
+          }
+          &::-webkit-scrollbar{
+            display: none;
+          }
+        }
+        .shopping-finished{
+          width: 100%;
+          @include justify-element(center);
+          input[type=button]{
+            @include set-props-button;
+          }
+        }
+      }
+    }
+  }
+  footer{
+    h4{
+      height: 5vh;
+      color:$color-primary;
+    }
+  }
+}

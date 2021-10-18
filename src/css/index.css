@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Playfair Display", serif;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #434444;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.container header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20vh;
+}
+.container header h1 {
+  color: #6be0b1;
+  text-shadow: 1px 0 #fcfcfc;
+  margin-inline-end: 1rem;
+  font-size: 2.9rem;
+}
+.container header h1:hover {
+  color: #fcfcfc;
+}
+.container header nav {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+.container header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+.container header nav ul li {
+  border: 1px solid #6be0b1;
+  background-color: #1a1919;
+  color: #fcfcfc;
+  padding: 0.8rem;
+  border: 1px solid #6be0b1;
+  cursor: pointer;
+}
+.container header nav ul li a {
+  text-decoration: none;
+  color: #fcfcfc;
+}
+.container header nav ul li a:hover {
+  color: #6be0b1;
+  text-shadow: 1px 0 #fcfcfc;
+}
+.container header nav ul li:hover {
+  border: 1px solid #6be0b1;
+}
+.container header .avatar {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid #6be0b1;
+  background-color: #1a1919;
+  color: #fcfcfc;
+  font-size: 1.5rem;
+}
+.container header .avatar:hover {
+  border: 1px solid #6be0b1;
+  color: #6be0b1;
+  text-shadow: 1px 0 #fcfcfc;
+}
+.container main {
+  height: 71vh;
+}
+.container main section {
+  display: flex;
+  justify-content: space-evenly;
+}
+.container main section article {
+  width: 45%;
+  height: 50vh;
+  box-sizing: border-box;
+  padding: 2rem;
+  border: 1px solid #6be0b1;
+  color: #fcfcfc;
+  border-radius: 2rem;
+}
+.container main section article form {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 42vh;
+}
+.container main section article form input:read-only {
+  border-radius: 5px;
+  height: 2rem;
+  border: 1px solid #6be0b1;
+  background-color: #1a1919;
+  color: #fcfcfc;
+}
+.container main section article form input[type=submit] {
+  width: 50%;
+  margin: 0.5rem auto;
+  border-radius: 3rem;
+  color: #fff;
+  font-weight: 700;
+  background-color: #1a1919;
+  border: 1px solid #6be0b1;
+  padding: 0.3rem;
+  text-transform: uppercase;
+}
+.container main section article form input[type=submit]:hover {
+  background: #6be0b1;
+}
+.container main section article form select {
+  border-radius: 5px;
+  height: 2rem;
+  border: 1px solid #6be0b1;
+  background-color: #1a1919;
+  color: #fcfcfc;
+}
+.container main section article table {
+  border-collapse: collapse;
+  display: inline-block;
+  height: 35.5vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.container main section article table thead {
+  position: sticky;
+  top: 0;
+}
+.container main section article table thead tr td {
+  width: 200px;
+  text-align: center;
+  border: 1px solid #6be0b1;
+  background-color: #1a1919;
+  color: #fcfcfc;
+}
+.container main section article table tbody tr td {
+  text-align: center;
+  color: #fcfcfc;
+}
+.container main section article table tfoot {
+  position: fixed;
+  top: 59%;
+}
+.container main section article table tfoot tr td {
+  min-width: 275px;
+  text-align: center;
+  border: 1px solid #6be0b1;
+  background-color: #1a1919;
+  color: #fcfcfc;
+}
+.container main section article table::-webkit-scrollbar {
+  display: none;
+}
+.container main section article .shopping-finished {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container main section article .shopping-finished input[type=button] {
+  width: 50%;
+  margin: 0.5rem auto;
+  border-radius: 3rem;
+  color: #fff;
+  font-weight: 700;
+  background-color: #1a1919;
+  border: 1px solid #6be0b1;
+  padding: 0.3rem;
+  text-transform: uppercase;
+}
+.container main section article .shopping-finished input[type=button]:hover {
+  background: #6be0b1;
+}
+.container footer h4 {
+  height: 5vh;
+  color: #fcfcfc;
+}
+
+/*# sourceMappingURL=index.css.map */
